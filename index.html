@@ -2,27 +2,27 @@
 
 <body>
     <! --修改地方1-->
-    <p>未更新</p>
+    <p>已更新</p>
     <div>
         <div>
             <! --修改地方2-->
             <a
-                href='https://login.microsoftonline.com/common/oauth2/v2.0/authorize?scope=https%3A%2F%2Fgraph.microsoft.com%2FFiles.ReadWrite.All+Files.Read.All+Sites.Read.All+Sites.ReadWrite.All+User.Read.All+User.ReadWrite.All+Directory.Read.All+Directory.ReadWrite.All+Mail.Read+Mail.ReadWrite+MailboxSettings.Read+MailboxSettings.ReadWrite+offline_access&response_type=code&client_id=你的应用id&redirect_uri=你的项目主页'>click
+                href='https://login.microsoftonline.com/common/oauth2/v2.0/authorize?scope=https%3A%2F%2Fgraph.microsoft.com%2FFiles.ReadWrite.All+Files.Read.All+Sites.Read.All+Sites.ReadWrite.All+User.Read.All+User.ReadWrite.All+Directory.Read.All+Directory.ReadWrite.All+Mail.Read+Mail.ReadWrite+MailboxSettings.Read+MailboxSettings.ReadWrite+offline_access&response_type=code&client_id=c07d4b4b-49b7-4389-a6e7-13b129091737&redirect_uri=https://xzake.github.io/GetAutoApiToken/index.html'>click
 
                 here to get your refresh code</a>
         </div>
         <div id='info'></div>
         <form action="https://login.microsoftonline.com/common/oauth2/v2.0/token" method="POST" style="display:none;">
             <! --修改地方3-->
-            <input type="text" name="client_id" placeholder="client_id" value="你的应用id" />
+            <input type="text" name="client_id" placeholder="client_id" value="c07d4b4b-49b7-4389-a6e7-13b129091737" />
             <! --修改地方4-->
             <input type="text" name="client_secret" placeholder="client_secret"
-                value="你的应用机密" />
+                value="@hlAaPd1rKyN6FYpSm72Syai:Xzo?G/C" />
             <input type="text" name="grant_type" placeholder="authorization_code" value="authorization_code" />
             <input type="text" name="requested_token_use" placeholder="on_behalf_of" value="on_behalf_of" />
             <! --修改地方5-->
             <input type="text" name="redirect_uri" placeholder="redirect_uri"
-                value="你的项目主页" />
+                value="https://xzake.github.io/GetAutoApiToken/index.html" />
             <input type="text" name="code" placeholder="code" id="code" />
             <input type="submit" id='submit' />
         </form>
